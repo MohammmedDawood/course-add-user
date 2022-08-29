@@ -21,6 +21,7 @@ const AddUser = (props) => {
 
     console.log("Add user");
     console.log(enteredUsername, enteredAge);
+    props.onAddUser(enteredUsername, +enteredAge);
     // reset the form
     setEnteredUsername("");
     setEnteredAge("");
